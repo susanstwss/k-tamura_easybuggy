@@ -56,4 +56,11 @@ jobs:
         pip install spdx_tools-0.7.0a3_ws-py3-none-any.whl
         pip install ws_sbom_generator
         sbom_generator -u $WS_USERKEY -k $WS_APIKEY -s $WS_PROJECTTOKEN -a $WS_URL -t tv -o ./whitesource
+    - name: 'Upload WhiteSource folder'
+      uses: actions/upload-artifact@v2
+      with:
+        name: WhiteSource
+        path: whitesource
+        retention-days: 1
+
         
