@@ -46,6 +46,7 @@ jobs:
         WS_GENERATEPROJECTDETAILSJSON: true
       run: |
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
+        curl -LJO https://raw.githubusercontent.com/whitesource-ps/ws-sbom-generator/master/spdx_tools-0.7.0a3_ws-py3-none-any.whl
         echo Unified Agent downloaded successfully
         WARFILE=$(find ./ -type f -wholename "*/target/*.war")
         echo $WARFILE will be added to appPath
