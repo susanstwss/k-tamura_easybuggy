@@ -1,4 +1,4 @@
-# replace .war with .jar or .ear if needed
+# #replace .war with .jar or .ear if needed
 name: Whitesource Prioritize Java with Maven
 
 on:
