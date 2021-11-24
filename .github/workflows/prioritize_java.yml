@@ -1,5 +1,5 @@
 # #replace .war with .jar or .ear if needed
-name: Whitesource Prioritize Java with Maven
+name: Whitesource Prioritize Java with Maven and SBOM SPDX
 
 on:
   push:
